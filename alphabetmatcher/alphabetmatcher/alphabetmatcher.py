@@ -41,7 +41,7 @@ class Matcher(object):
         for this_char in input:
             # if the character is interest and not yet stored in found_characters
             if this_char.lower() in self.interesting_characters and this_char.lower() not in self.__found_characters:
-                self.__found_characters.append(this_char)
+                self.__found_characters.append(this_char.lower())
 
 
 
