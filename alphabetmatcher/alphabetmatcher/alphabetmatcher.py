@@ -27,19 +27,21 @@ class Matcher(object):
         self.__find_characters(matcher_input)
 
     def success(self):
-        '''
+        """
+        Iterate through the characters in the alphabet.
+        Return False on the first missing character. Return True if we get through all of the characters
 
-        :return:
-        '''
+        :return: boolean
+        """
         for this_char in 'abcdefghijklmnopqrstuvwxyz':
             if this_char not in self.__found_characters:
                 return False
         return True
 
-    def __find_characters(self, input):
-        # interate through the input
-        for this_char in input:
-            # if the character is interest and not yet stored in found_characters
+    def __find_characters(self, input_string):
+        # iterate through the input_string
+        for this_char in input_string:
+            # if the character is interesting and not yet stored in found_characters
             if this_char.lower() in self.__interesting_characters and this_char.lower() not in self.__found_characters:
                 self.__found_characters.append(this_char.lower())
 
