@@ -1,7 +1,3 @@
 [
-  "tests/test_alphabetmatcher.py::test_empty_string", 
-  "tests/test_alphabetmatcher.py::test_exact_match", 
-  "tests/test_alphabetmatcher.py::test_case_mixing", 
-  "tests/test_alphabetmatcher.py::test_reorder_and_junk", 
-  "tests/test_alphabetmatcher.py::test_repeats"
+  "tests/test_app.py::test_rest_post"
 ]

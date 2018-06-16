@@ -18,6 +18,10 @@ Server: Werkzeug/0.14.1 Python/2.7.15
 Date: Sat, 16 Jun 2018 00:20:03 GMT
 
 True
+
+
+An alternative test from python would be:
+
 """
 
 import json
