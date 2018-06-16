@@ -4,19 +4,19 @@
 class Matcher(object):
     """
     Instantiate the object with an input string. Matcher.success() returns True if the input string contains at least
-    one of each letter of the alphabet.  I Assume case doesn't matter.
+    one of each letter of the alphabet.  I assume case doesn't matter.
 
-    ex.
+    # ex.
     this_matcher = Matcher('111 some string to be tested')
 
-    use success() to see if the match is successful
+    # use success() to see if the match is successful.  success() returns a boolean value
     status = this_matcher.success()
 
     """
-    def __init__(self, input):
+    def __init__(self, matcher_input):
         """
-            :param input: Some string of characters
-            :type input: str
+            :param matcher_input: Some string of characters
+            :type matcher_input: str
         """
         # matching without case sensitivity.  normalize to lower in __find_characters()
         self.__interesting_characters = 'abcdefghijklmnopqrstuvwxyz'
@@ -24,7 +24,7 @@ class Matcher(object):
         self.__found_characters = []
         """:type : list[str]"""
 
-        self.__find_characters(input)
+        self.__find_characters(matcher_input)
 
     def success(self):
         '''
