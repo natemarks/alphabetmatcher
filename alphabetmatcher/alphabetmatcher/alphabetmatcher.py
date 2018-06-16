@@ -19,7 +19,7 @@ class Matcher(object):
             :type input: str
         """
         # matching without case sensitivity.  normalize to lower in __find_characters()
-        self.interesting_characters = 'abcdefghijklmnopqrstuvwxyz'
+        self.__interesting_characters = 'abcdefghijklmnopqrstuvwxyz'
 
         self.__found_characters = []
         """:type : list[str]"""
@@ -40,7 +40,7 @@ class Matcher(object):
         # interate through the input
         for this_char in input:
             # if the character is interest and not yet stored in found_characters
-            if this_char.lower() in self.interesting_characters and this_char.lower() not in self.__found_characters:
+            if this_char.lower() in self.__interesting_characters and this_char.lower() not in self.__found_characters:
                 self.__found_characters.append(this_char.lower())
 
 
