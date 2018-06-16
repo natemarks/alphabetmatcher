@@ -16,7 +16,10 @@ alphabetmatcher
 
 
 
-You will receive a string as input, potentially a mixture of upper and lower case, numbers, special characters etc. The task is to determine if the string contains at least one of each letter of the alphabet. Return true if all are found and false if not. Write it as a RESTful web service (no authentication necessary) in any language/framework you choose and document the service.
+You will receive a string as input, potentially a mixture of upper and lower case, numbers, special characters etc.
+    The task is to determine if the string contains at least one of each letter of the alphabet. Return true if all
+        are found and false if not. Write it as a RESTful web service (no authentication necessary) in any
+            language/framework you choose and document the service.
 
 
 * Free software: MIT license
@@ -37,5 +40,11 @@ This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypack
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
 
 
+i used this article to put together my first REST application:
+https://sourcedexter.com/python-rest-api-flask/
+
+
+I used this article as a rference for starting the REST listener as a pytest fixture
 
 https://serge-m.github.io/testing-json-responses-in-Flask-REST-apps-with-pytest.html
+

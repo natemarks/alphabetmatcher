@@ -25,6 +25,7 @@ def test_case_mixing():
     from alphabetmatcher.alphabetmatcher import Matcher
 
     dd = Matcher('abcdefGhijklmnopqrStuvwxyz')
+
     assert dd.success()
 
 

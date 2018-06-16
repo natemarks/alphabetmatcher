@@ -31,7 +31,8 @@ class Matcher(object):
         Iterate through the characters in the alphabet.
         Return False on the first missing character. Return True if we get through all of the characters
 
-        :return: boolean
+        :return: Returns True on successful match and False otherwise
+        :rtype: boolean
         """
         for this_char in 'abcdefghijklmnopqrstuvwxyz':
             if this_char not in self.__found_characters:
