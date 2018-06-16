@@ -32,6 +32,7 @@ from alphabetmatcher import Matcher
 app = Flask(__name__)
 
 
+# listen for POST requests on the /matcher URI
 @app.route("/matcher", methods=["POST"])
 def get_matcher():
     request_body = json.loads(request.data)
