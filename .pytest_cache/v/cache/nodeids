@@ -4,5 +4,6 @@
   "tests/test_alphabetmatcher.py::test_case_mixing", 
   "tests/test_alphabetmatcher.py::test_reorder_and_junk", 
   "tests/test_alphabetmatcher.py::test_repeats", 
-  "tests/test_app.py::test_rest_post"
+  "tests/test_app.py::test_pos_rest_post", 
+  "tests/test_app.py::test_neg_rest_post"
 ]

@@ -54,3 +54,7 @@ I used this article as a rference for starting the REST listener as a pytest fix
 
 https://serge-m.github.io/testing-json-responses-in-Flask-REST-apps-with-pytest.html
 
+This might be a better guide to testing the REST interface:
+http://flask.pocoo.org/docs/1.0/testing/
+
+
